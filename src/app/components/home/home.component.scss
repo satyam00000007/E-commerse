@@ -1,0 +1,66 @@
+.banner-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+}
+
+.card-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-25%);
+  padding: 10px;
+  background-color: #fff;
+}
+
+.card-container {
+  max-width: 1140px;
+  overflow: hidden;
+}
+
+.card {
+  margin: 10px;
+  padding: 20px;
+  // background-color: aquamarine;
+  height: 180px;
+  width: 300px;
+  background-color: gray; /* Gray color behind the image */
+  background-size: contain; /* Ensure the whole image is visible */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* No repeat */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.hero-content {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .banner-bottom {
+    height: fit-content;
+     display: block;
+      .card-items {
+        flex-direction: column;
+      transform: translateY(0%);
+      gap: 15px;
+    }
+    .card-container {
+        width: 90%;
+      .card {
+        width: 100%;
+        margin: 0px;
+      }
+      .hero-content {
+        color: #fff;
+      }
+    }
+  }
+}
+
+// .a{
+//   background-image: url();
+// }

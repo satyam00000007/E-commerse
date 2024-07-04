@@ -1,0 +1,47 @@
+<div class="main-container">
+    <div class="product-container">
+        <div class="info">
+            <div class="heading">
+                <h1>Fashion</h1>
+            </div>
+        </div>
+        <div class="product-list">
+            <div class="filter">
+                <p>Showing 1–12 of 23 results</p>
+                <div>Default Sorting</div>
+            </div>
+            <div class="product-card" [routerLink]="['/product/detail']" routerLinkActive="router-link-active" >
+                <div class="product-image">
+                    <img  src="../../../assets\Slider\sliderA\slider-01.jpg">
+                </div>
+                <div class="product-info">
+                    <div class="product-np">
+                        <h5 class="info">Wooden container Bowl</h5>
+                        <p>$96.00 <s>$120.00</s></p>
+                    </div>
+                    <div class="product-d">
+                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram.</p>
+                    </div>
+                    <div class="product-add">
+                        <button class="add-cart" (click)="AddtoCart()">+ Add to Cart</button>  
+                        <button class="add-like"><span class="material-symbols-outlined">
+                            favorite
+                            </span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination-container">
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#">1</a>
+                    <a class="active" href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>

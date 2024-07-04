@@ -1,0 +1,42 @@
+<div class="product-container">
+    <div class="image-gallery">
+        <img src="image1.jpg" alt="Product Image" class="main-image">
+        <div class="thumbnail-gallery">
+            <img src="image1.jpg" alt="Thumbnail" class="thumbnail">
+            <img src="image2.jpg" alt="Thumbnail" class="thumbnail">
+            <img src="image3.jpg" alt="Thumbnail" class="thumbnail">
+        </div>
+    </div>
+    <div class="product-details">
+        <h1 class="product-title">Wooden container Bowl</h1>
+        <div class="rating">
+            <span>★★★☆☆</span>
+            <span>3 rating(s)</span>
+            <a href="#">Add your Review</a>
+        </div>
+        <div class="price">
+            <span class="current-price">$96.00</span>
+            <span class="original-price">$120.00</span>
+        </div>
+        <p class="product-description">
+            Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram.
+        </p>
+        <form class="product-options">
+            <label for="size">Size*</label>
+            <select id="size" required>
+                <option value="">- Please select -</option>
+            </select>
+            <label for="color">Color*</label>
+            <select id="color" required>
+                <option value="">- Please select -</option>
+            </select>
+            <label for="quantity">Quantity</label>
+            <div class="quantity-selector">
+                <button type="button" class="quantity-decrease">-</button>
+                <input type="number" id="quantity" name="quantity" value="1" min="1">
+                <button type="button" class="quantity-increase">+</button>
+            </div>
+            <button type="submit" class="add-to-cart">+ Add to Cart</button>
+        </form>
+    </div>
+</div>

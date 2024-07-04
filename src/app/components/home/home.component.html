@@ -1,0 +1,40 @@
+<div class="main-container">
+    <section class="banner">
+        <div>
+            <ng-image-slider [images]="imageObject" [imageSize]="imageSize" [imagePopup]="false"	 #nav>
+                <div class="hero-content">
+                    <h3 class="title">Hand Made Coffee Table</h3>
+                    <p class="subheading">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis enim unde voluptatem culpa saepe sit, delectus voluptatibus quia? Repellat, earum!
+                    </p>
+                    <button>TRy Now</button>
+                </div>
+            </ng-image-slider>
+
+        </div>
+        <div class="banner-bottom">
+            <div class="card-items">
+                <div class="card-container" *ngFor="let item of productlist" >
+                    <div class="card" [ngStyle]="{'background-image' : 'url('+item.thumbnail+')'}">
+                        <h2>Lighting & Chair</h2>
+                        <a [routerLink]="['/product/list']" routerLinkActive="router-link-active" >Discover Now</a>
+                    </div>
+                </div>
+                <!-- <div class="card-container">
+                    <div class="card">
+                        <h2>Lighting & Chair</h2>
+                        <a [routerLink]="['/product/list']" routerLinkActive="router-link-active" >Discover Now</a>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <h2>Lighting & Chair</h2>
+                        <a [routerLink]="['/product/list']" routerLinkActive="router-link-active" >Discover Now</a>
+                    </div>
+                </div> -->
+            </div>            
+        </div>
+    </section>
+    <app-tranding></app-tranding>
+    <section class="info"></section>
+</div>
